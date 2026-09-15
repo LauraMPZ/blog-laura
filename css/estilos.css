@@ -1,0 +1,226 @@
+/*FONDO CON DEGRADADO MARINO */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html {
+    scroll-behavior: smooth; 
+    /* Hace que el salto entre bloques 
+    sea fluido al pulsar las flechas */
+}
+
+body {
+    font-family: sans-serif;
+    font-size: 14px;
+    background: linear-gradient(180deg, #e0f4f5 0%, #b2e3e5 50%, #8ecad0 100%);
+    background-attachment: fixed; 
+    /* Mantiene el fondo fijo mientras haces scroll */
+    color: #2c3e50;
+    line-height: 1.6;
+    padding: 60px 30px;
+    margin:50px;
+    border:50px;
+}
+
+img{
+    border-radius:20px;
+    padding:20px;
+    justify-content:center
+}
+
+h6{
+    font-size: 12px;
+}
+
+#conjunto-img{
+    display: flex;
+    flex-direction: column; /* Alinea las imágenes verticalmente */
+    gap: 20px;              /* Crea un espacio limpio y uniforme entre ellas */
+    align-items: center;
+    border-radius:20px;
+}
+
+/*menu navegador*/
+.menunavegador{
+  list-style: none; 
+  text-decoration: none;        
+  display: flex;           
+  gap: 30px;               
+  justify-content: center;
+  font-family: 'Segoe UI', sans-serif;
+  font-size: 16px;
+              }
+
+/* 2. CABECERA */
+.cabecera {
+    color:aliceblue;
+    text-align:center;
+    font-size:16px;
+    font-style: oblique;
+    margin-bottom:20px;
+    background:linear-gradient(#87CEEB,#008080);
+    border-radius:30px;
+    padding: 30px;
+    
+    margin: 10px;
+    
+    justify-content: center;
+}
+
+.cabecera h1{
+    font-size:52px;
+    color: #0b4f54;
+    text-shadow: -1px 1px 5px #ffffff;
+    margin:30px;
+    margin-bottom: 50px;
+}
+.cabecerasegund{
+    font-size:30px;
+    color: #0b4f54;
+    text-shadow: -6px 1px 5px #ffffff;
+    margin:40px 10px 10px 10px;
+    border:30px;
+    padding:10px;
+   
+    text-align:center;
+}
+
+
+
+/* 3. CONTENEDOR PRINCIPAL */
+.contenedor {
+    max-width: 1300px;
+    margin: 0 auto;
+}
+
+#intro{
+    text-align: center;
+    font-size: 28px;
+    margin:20px;
+    display:flex;
+}
+
+/* 4. BLOQUES ESTILO TARJETA */
+.post-card {
+    background-color: rgba(255, 255, 255, 0.95); /* Blanco con una pizca de transparencia */
+    border-radius: 10px;
+    padding: 20px;
+    margin:20px;
+    margin-bottom: 10px;
+}
+
+.post-card:hover {
+    transform: translateY(-5px);
+}
+
+/* 5. DISEÑO INTERNO (IMAGEN + TEXTO) */
+.post-content {
+    display: flex;
+    gap: 55px;
+    align-items:center;
+    flex-wrap: wrap; /* Hace que sea responsivo en móviles */
+    float:center;
+    text-align:left;
+}
+
+.parr-entradas{
+    font-size: 23px;
+
+}
+
+.texto {
+    font-size:18px;
+    display:flex;
+    flex: 5;
+    min-width: 280px; /* Evita que se encoja demasiado en pantallas pequeñas */
+    text-align:center;
+}
+
+
+/* 6. BOTONES Y NAVEGACIÓN */
+.post-nav {
+    font-size:32px;
+    display: flex;
+    align-items: center;
+    float:left;
+    padding: 0px 0px 50px 20px;
+    margin:50px;
+}
+
+/*pruebas de botones ?? */
+
+
+.btn-start:hover {
+    background-color: #117a85; /* Se aclara suavemente al pasar el ratón */
+    transform: translateY(2px); /* Pequeña pulsación hacia abajo */
+}
+
+/* Botón principal que lleva a la página individual */
+.btn-outline {
+  background: transparent;
+  color: #007bff;
+  border: 2px solid #007bff;
+  padding: 8px 18px;
+  border-radius: 4px;
+  cursor: pointer;
+  transition: all 0.3s ease;
+}
+
+.btn-gradient {
+  background: linear-gradient(135deg, #1fa2ff 0%, #12d8fa 50%, #06ffcb);
+  color: white;
+  border: none;
+  padding: 10px 20px;
+  border-radius: 20px;
+  cursor: pointer;
+}
+
+/*Para formulario de contacto*/
+#form-contacto{
+    color: font-weight: 200;
+    text-align: center;
+}
+
+
+/* 7. SECCIÓN DE BIBLIOGRAFÍA Y FUENTES */
+
+.fuentes{
+    font-size: 10px;
+    color: #05363a;
+    margin-bottom: 8px;
+    display: flex;
+    align-items: center;
+    gap: 10px;
+}
+
+/* 8. PIE DE PÁGINA (FOOTER) */
+.blog-footer {
+    background-color: #052629; /* Turquesa abisal profundo: elegante y con gran contraste */
+    color: #a3c1c4;            /* Texto gris azulado claro, suave para la vista */
+    padding: 30px 20px;
+    margin-top: 40px;
+    font-size: 0.85rem;
+    text-align: center;
+    border-top: 3px solid #1abc9c; 
+    border-radius:20px;
+}
+
+.footer-content {
+    max-width: 800px;
+    margin: 0 auto;
+    display: flex;
+    justify-content: space-between; /* Separa los textos a los extremos en pantallas grandes */
+    align-items: center;
+    flex-wrap: wrap; /* Hace que se apile verticalmente en pantallas de móviles */
+    gap: 10px;
+}
+
+
+.subir {
+    color: #ffffff;
+    text-decoration: none;
+    border-bottom: 1px dashed #1abc9c; /* Subrayado punteado elegante */
+    transition: color 0.2s ease, border-color 0.2s ease;
+}
